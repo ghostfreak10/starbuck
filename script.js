@@ -27,17 +27,33 @@ tl.to("#beams2",{
     left:"30%"
 },'star')
 
-var tl2 = gsap.timeline({scrollTrigger:{
+var tl2=gsap.timeline({scrollTrigger:{
     trigger: ".three",
     start: "0% 95%",
     end: "20% 50%",
-    scrub: true,
-    // markers: true,
+    scrub:true,
+    // markers:true,
 }})
 
 
 tl2.to("#starbucks",{
-    width:"22%",
-    top:"210%",
-    left:"39%"
-})
+    top: "180%",
+    left: "33%",
+    width:"35%",
+},'ca')
+
+tl2.to("#leaf",{
+    top: "200%",
+    left: "52%",
+},'ca')
+
+tl2.to("#beans1",{
+    top: "210%",
+    left: "33%",
+    // width:"35%"
+},'ca')
+tl2.to("#beams2",{
+    top: "250%",
+    left: "53%",
+    // width:"35%",
+},'ca')

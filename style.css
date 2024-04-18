@@ -10,8 +10,10 @@
 }
 
 html,body{
+    /* overflow-x: hidden; */
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 #main{
@@ -63,7 +65,9 @@ background:linear-gradient(150deg,#35c77e,#0c6b42,#0a3a22,#010f08); */
     position: absolute;
     width: 40%;
     z-index: 2;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s; */
+    /* transition: transform .2s ease-in-out; */
+    transition: transform .2s ease ;
 }
 
 #beans1{
@@ -79,6 +83,7 @@ background:linear-gradient(150deg,#35c77e,#0c6b42,#0a3a22,#010f08); */
     bottom: 25%;
     left: 32%;
     transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    z-index: 2;
 }
 
 #beams3{
@@ -163,6 +168,7 @@ background:linear-gradient(150deg,#35c77e,#0c6b42,#0a3a22,#010f08); */
     height: 70vh;
     background-color: #fff;
     border-radius: 20px;
+    
 }
 
 .card h1{
