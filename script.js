@@ -1,3 +1,4 @@
+
 const tl=gsap.timeline({scrollTrigger:{
     trigger:".two",
     start:"0% 95%",
@@ -45,15 +46,40 @@ tl2.to("#starbucks",{
 tl2.to("#leaf",{
     top: "200%",
     left: "52%",
+    
 },'ca')
 
 tl2.to("#beans1",{
-    top: "210%",
-    left: "33%",
+    top: "215%",
+    left: "52%",
     // width:"35%"
 },'ca')
 tl2.to("#beams2",{
-    top: "250%",
-    left: "53%",
+    top: "240%",
+    left: "37%",
+    
     // width:"35%",
 },'ca')
+
+
+// scroll reveal
+
+const sr = ScrollReveal({
+    origin:'top',
+    distance:'60px',
+    duration:2500,
+    delay:400,
+})
+
+// sr.reveal(`#beans1`)
+// sr.reveal('.star_h1',{origin:'left',opacity:1})
+
+ScrollReveal().reveal('.star_h1');
+// ScrollReveal().reveal('.star_h1');
+ScrollReveal().reveal('#beams3',{origin:'left'});
+ScrollReveal().reveal('#beams2',{origin:'left'});
+ScrollReveal().reveal('#beans1',{origin:'right'});
+ScrollReveal().reveal('#leaf',{origin:'right'});
+ScrollReveal().reveal('#caramel',{origin:'left'});
+ScrollReveal().reveal('#tea',{origin:'right'});
+// 
